@@ -3,13 +3,15 @@
   text-align: left;
 }
 
-.introColumns {
-  float: left;
-}
+.row{
+    display: flex;
+  }
 
 .myPicture {
-  padding-top: 50px;
-  width: 17%;
+  flex: 20%;
+  padding-top: 60px;
+  padding-left: 30px;
+  width: 100%;
 }
 
 .myPicture img{
@@ -20,14 +22,10 @@
 }
 
 .myInfo{
-  width: 80%;
+  flex: 80%;
+  padding: 60px 30px 0px 30px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 
 /* Text */
