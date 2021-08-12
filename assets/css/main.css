@@ -269,3 +269,10 @@
   transform: translate(-50%, 100%);
 }
 
+/* Tabs */
+section {
+  display: none;
+}
+section:target {
+  display: block;
+}
