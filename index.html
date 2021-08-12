@@ -11,13 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>    
-    <script>
-      function show(shown, hidden) {
-        document.getElementById(shown).style.display='block';
-        document.getElementById(hidden).style.display='none';
-        return false;
-      }
-    </script>
+
     
   </head>
 
@@ -73,28 +67,22 @@
       </a>
 
     </div>
-
-
-  
-    <div id="Page2" style="display:none">
-      Content of page 2
-      <a href="#" onclick="return show('Projects','Page2');">Show page 1</a>
-    </div>
-
   </div>
   </div>
 
+  <br>
     <div>
-      <a href="#" onclick="return show('Page2','Projects');"> <h1 class="header1b"> Projects</h1></a>     
-      
-      <div class="grid" id="Projects">
+      <h1 class="header1b"> <a href="#Projects">Projects</a> <a>|</a>  
+        <a href="#Publications">Publications</a> <a>|</a>  
+        <a href="#Courses">Coursework</a>  <a>|</a> 
+      </h1>  </div>    
+
+      <section id="Projects">
+      <div class="grid">
       <div class="mediumItem" onclick="window.open('http://texascovid19.us-east-2.elasticbeanstalk.com/')" 
       style="background-color:#D33E43; background-image: url('assets/imgs/graphs.png'); background-size: auto 60%; background-position: bottom center;" >  
       <h5 class="gridHeader"> COVID-19 Dashboard </h5> <p class="gridText"> A neural network based web-app prediction model</p></div> 
-      
-      <div class="mediumItem" onclick="window.open('https://www.kaggle.com/noele123')" 
-      style="background-color:#1E212B; background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png'); background-size: auto 40%; background-position: bottom center;"> 
-      <h5 class="gridHeader"> Kaggle </h5> <p class="gridText"> Machine Learning competitor & Data Science contributor</p> </div> 
+  
       
       <div class="largeItem" onclick="window.open('https://www.youtube.com/watch?v=aqKqN5uav3I')" 
       style="background-color: #067BC2; background-image: url('assets/imgs/ar.png'); background-size: auto 75%; background-position: bottom right;"> 
@@ -107,31 +95,34 @@
       <div class="largeItem" onclick="window.open('http://2018.igem.org/Team:Austin_LASA')" 
       style="background-color:#006C67; background-image: url('https://igem.org/wiki/images/9/9c/IGEM_logo_2500x2500.png'); background-size: auto 85%; background-position: bottom center;"> 
       <h5 class="gridHeader"> HIV Detection Kit for Infants </h5> <p class="gridText"> 2018 iGEM Conference Project - Bronze</p> </div> 
-      
-      <div class="mediumItem" onclick="window.open('https://doi.org/10.1038/s42003-020-01127-5')"  
-      style="background-color:#B1B6A6; background-image: url('assets/imgs/bacteria.png'); background-size: auto 60%; background-position: bottom right;"> 
-      <h5 class="gridHeader"> Optical Density Measurements in Bacterial Plates </h5>    </div> 
-     
-      <div class="mediumItem" onclick="window.open('https://drive.google.com/file/d/1ZooA-wznJv2IcYySToztu1cu0VGllf1L/view?usp=sharing')" 
-      style="background-color:#1E212B; background-image: url('assets/imgs/energy.png'); background-size: auto 55%; background-position: bottom right;"> 
-      <h5 class="gridHeader"> Organic Energy </h5> <p class="gridText"> A theoretical proposal to harvest and store sugar as a renewable energy source</p>  </div> 
-      
-      <div class="smallItem" onclick="window.open('https://courses.edx.org/certificates/8b3b90be838f42faac749898f7fb9efa')" 
-      style="background-color:#D33E43;"> 
-      <h5 class="gridHeader"> MATLAB Course </h5> <p class="gridText"> Harvard edX QMB1</p> </div> 
-      
-      <div class="smallItem" onclick="window.open('https://www.uscyberpatriot.org/Pages/Announcements/CyberPatriot-X-Competition-Timeline.aspx')" 
-      style="background-color:#006C67; background-image: url('https://alechoes.com/wp-content/uploads/2020/03/500_cyberemblem.png'); background-size: 50% 50%; background-position: bottom center;"> 
-      <h5 class="gridHeader"> Cyberpatriots </h5> <p class="gridText"> Qualified to 2018 nationals - Gold</p> </div> 
-      
+    
+      <div class="mediumItem" onclick="window.open('https://www.kaggle.com/noele123')" 
+      style="background-color:#1E212B; background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png'); background-size: auto 40%; background-position: bottom center;"> 
+      <h5 class="gridHeader"> Kaggle </h5> <p class="gridText"> Machine Learning competitor & Data Science contributor</p> </div> 
+
       <div class="smallItem" onclick="window.open('https://github.com/noele2/LED_Game')" 
       style="background-color:#1E212B;"> <h5 class="gridHeader"> LED Game </h5> <p class="gridText"> An engaging game made with Arduino </p> </div> 
-      
-      <div class="smallItem" onclick="window.open('https://picoctf.org')" 
-      style="background-color:#067BC2; background-image: url('https://picoctf.org/img/logos/picoctf-logo-horizontal-white.svg'); background-size: 90% 70%; background-position: bottom center;"> 
-      <h5 class="gridHeader"> picoCTF </h5> <p class="gridText"> 2017-2018</p> </div> 
+
   </div>
+</section>
+
+    <section id="Publications">
+      <br>
+      <h4> Robust estimation of bacterial cell count from optical density <a style="font-weight:normal" href="https://rdcu.be/ctWzd"> [pdf]</a> </h4> 
+      <h6 style="margin-left: 30px; font-weight:normal"> Jacob Beal, Natalie G. Farny, Traci Haddock-Angelli, Vinoo Selvarajah, Geoff S. Baldwin, Russell Buckley-Taylor, Markus Gershater, Daisuke Kiga, John Marken, Vishal Sanchania, Abigail Sison, Christopher T. Workman & <b> iGEM Interlab Study Contributors </b> </h6>
+      <h6 style="margin-left: 30px; font-weight:normal"> <i> Published in Nature of Communications Journal 2020</i> </h6>
+      <br>
+      <br>
+    </section>
+
+<section id="Courses">
+  <div class="grid">
+    <div class="smallItem" onclick="window.open('https://courses.edx.org/certificates/8b3b90be838f42faac749898f7fb9efa')" 
+    style="background-color:#D33E43;"> 
+    <h5 class="gridHeader"> MATLAB Course </h5> <p class="gridText"> Harvard edX QMB1</p> </div> 
 </div>
+</section>
+
 
 </main>
 </html>
