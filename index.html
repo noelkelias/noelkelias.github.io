@@ -74,24 +74,20 @@
 
     </div>
 
-    <div id="Page1">
-      Content of page 1
-      <a href="#" onclick="return show('Page2','Page1');">Show page 2</a>
-    </div>
+
   
     <div id="Page2" style="display:none">
       Content of page 2
-      <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+      <a href="#" onclick="return show('Projects','Page2');">Show page 1</a>
     </div>
 
   </div>
   </div>
 
     <div>
-      <h1 class="header1b"> Projects</h1>
-    </div>
-    
-    <div class="grid">
+      <a href="#" onclick="return show('Page2','Projects');"> <h1 class="header1b"> Projects</h1></a>     
+      
+      <div class="grid" id="Projects">
       <div class="mediumItem" onclick="window.open('http://texascovid19.us-east-2.elasticbeanstalk.com/')" 
       style="background-color:#D33E43; background-image: url('assets/imgs/graphs.png'); background-size: auto 60%; background-position: bottom center;" >  
       <h5 class="gridHeader"> COVID-19 Dashboard </h5> <p class="gridText"> A neural network based web-app prediction model</p></div> 
@@ -135,5 +131,7 @@
       style="background-color:#067BC2; background-image: url('https://picoctf.org/img/logos/picoctf-logo-horizontal-white.svg'); background-size: 90% 70%; background-position: bottom center;"> 
       <h5 class="gridHeader"> picoCTF </h5> <p class="gridText"> 2017-2018</p> </div> 
   </div>
+</div>
+
 </main>
 </html>
