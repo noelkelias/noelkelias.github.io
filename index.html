@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>    
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>   
+    <script>
+      function toggleHiddenImage(){
+        document.querySelector('#currentBook').classList.toggle('hiddenBook');
+          }
+    </script>
+
   </head>
 
 
@@ -114,7 +120,9 @@
 
 <section id="Reading">
   <p> I love reading new books no matter the genre. Feel free to give me any recommendations if you're down!
-  <br> What am I currently reading? Click here to find out </p>
+  <br> <br> What am I currently reading?</p>
+  <button onClick="toggleHiddenImage()">Show/Hide</button> <br> <br>
+  <img src="https://images-na.ssl-images-amazon.com/images/I/51o9rUPt4xL._AC_UL600_SR600,600_.jpg" id="currentBook" style='max-width:30%; max-height:30%;' class="hiddenBook"/>
 </section>
 
 <section id="Blog">

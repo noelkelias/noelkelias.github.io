@@ -25,10 +25,6 @@
   border-radius: 50%;
 }
 
-
-
-
-
 /* Text */
 .header1 {
   text-align: left;
@@ -272,3 +268,10 @@ section {
 section:target {
   display: block;
 }
+
+.hiddenBook{
+    display: none;
+  }
+
+
+
