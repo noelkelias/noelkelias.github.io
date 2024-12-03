@@ -231,10 +231,9 @@
   top: 1px;
 }
 
+
 .tooltip {
-  display: block;
-  position: absolute;
-  top: 0;
+  top: 165%;
   left: 50%;
   padding: 0.5rem 0.5rem;
   border-radius: 40px;
@@ -246,19 +245,6 @@
   transform: translate(-50%, -100%);
   transition: all 0.3s ease;
   z-index: 1;
-}
-.tooltip:after {
-  display: block;
-  position: absolute;
-  bottom: 1px;
-  left: 50%;
-  width: 0;
-  height: 0;
-  content: "";
-  border: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: transparent;
-  transform: translate(-50%, 100%);
 }
 
 /* Tabs */
