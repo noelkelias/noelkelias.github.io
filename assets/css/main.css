@@ -251,12 +251,8 @@
 section {
   display: none;
 }
-section:target {
-  display: block;
+.active {
+   display: block; 
 }
-
-.hiddenBook{
-    display: none;
-  }
 
 

@@ -12,11 +12,16 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>   
     <script>
-      function toggleHiddenImage(){
-        document.querySelector('#currentBook').classList.toggle('hiddenBook');
-          }
-    </script>
-
+      function showSection(sectionId) {
+         var sections = document.querySelectorAll('.section');
+               sections.forEach(function(section) {
+                   section.style.display = "none"; // Hide all sections by default
+         });
+          
+          var selectedSection = document.getElementById(sectionId);
+          selectedSection.style.display = "block"; 
+      }
+   </script>
   </head>
 
 
@@ -76,13 +81,13 @@
   <br>
     <div>
       <h1 class="header1b"> 
-         <a href="#Publications" style="color: black">Publications</a> <a>|</a>
-        <a href="#Projects"  style="color: black">Projects</a>   
+         <a href="#" onclick="showSection('Publications')" style="color: black">Publications</a> <a>|</a>
+        <a href="#" onclick="showSection('Projects')"  style="color: black">Projects</a>   
       </h1>  
       <br>
     </div>    
 
-    <section id="Projects">
+    <section id="Projects" class="section">
       <div class="grid">
 
       <div class="mediumItem" onclick="window.open('https://github.com/noele2/Web-Server')" 
@@ -115,7 +120,7 @@
       </div>
     </section>
     
-    <section id="Publications">
+    <section id="Publications" class="section">
       <ol style="padding-left: 20px;">
     
         <!-- 2024 Publications -->
