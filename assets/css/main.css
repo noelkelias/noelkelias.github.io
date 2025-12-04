@@ -252,4 +252,16 @@ section {
   display: none;
 }
 
-
+/* Remove link formatting from project grid blocks */
+.link-block {
+  position: relative;
+}
+.link-block > a {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
