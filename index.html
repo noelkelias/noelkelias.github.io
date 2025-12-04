@@ -112,16 +112,13 @@
     <section id="Projects" class="section">
       <div class="grid">
 
-     <a href="https://github.com/noele2/Web-Server" style="text-decoration:none; color:inherit; display:block;">
-        <div class="mediumItem"
-            style="background-color:#067BC2; 
-                    background-image: url('assets/imgs/server.png'); 
-                    background-size: auto 60%; 
-                    background-position: bottom center;">
-          <h5 class="gridHeader">Multi-Threaded Web Server</h5>
-          <p class="gridText">A HTTP Multi-Threaded Web Server built in both C and Rust</p>
-        </div>
-      </a>
+      <a href="https://github.com/noele2/Web-Server" target="_blank" class="link-wrapper">
+  <div class="mediumItem"
+      style="background-color:#067BC2; background-image:url('assets/imgs/server.png'); background-size:auto 60%; background-position:bottom center;">
+    <h5 class="gridHeader">Multi-Threaded Web Server</h5>
+    <p class="gridText">A HTTP Multi-Threaded Web Server built in both C and Rust</p>
+  </div>
+</a>
 
       <div class="mediumItem" 
       style="background-color:#D33E43; background-image: url('assets/imgs/graphs.png'); background-size: auto 60%; background-position: bottom center;" >  
@@ -148,6 +145,21 @@
 
       </div>
     </section>
+
+    <style>
+  /* Makes <a> wrap divs without changing appearance */
+  .link-wrapper {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  /* Ensures cursor is pointer when hovering the div */
+  .link-wrapper > div {
+    cursor: pointer;
+  }
+</style>
+
     
     <section id="Publications" class="section">
       <ol style="padding-left: 20px;">
