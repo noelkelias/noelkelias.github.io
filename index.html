@@ -23,6 +23,12 @@
           var selectedSection = document.getElementById(sectionId);
           selectedSection.style.display = "block"; 
       }
+
+      function updateTimestamp() {
+        document.getElementById('timestamp').innerHTML =
+          'Updated ' + new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
+      }
+      document.addEventListener("DOMContentLoaded", updateTimestamp);
    </script>
   </head>
 
@@ -106,9 +112,16 @@
     <section id="Projects" class="section">
       <div class="grid">
 
-      <div class="mediumItem" onclick="window.open('https://github.com/noele2/Web-Server')" 
-      style="background-color:#067BC2; background-image: url('assets/imgs/server.png'); background-size: auto 60%; background-position: bottom center;" >  
-      <h5 class="gridHeader"> Multi-Threaded Web Server </h5> <p class="gridText"> A HTTP Multi-Threaded Web Server built in both C and Rust</p></div> 
+     <a href="https://github.com/noele2/Web-Server" style="text-decoration:none; color:inherit;">
+        <div class="mediumItem"
+            style="background-color:#067BC2; 
+                    background-image: url('assets/imgs/server.png'); 
+                    background-size: auto 60%; 
+                    background-position: bottom center;">
+          <h5 class="gridHeader">Multi-Threaded Web Server</h5>
+          <p class="gridText">A HTTP Multi-Threaded Web Server built in both C and Rust</p>
+        </div>
+      </a>
 
       <div class="mediumItem" 
       style="background-color:#D33E43; background-image: url('assets/imgs/graphs.png'); background-size: auto 60%; background-position: bottom center;" >  
