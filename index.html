@@ -242,7 +242,8 @@
 
 <br>
 <br>
-<p style="text-align: center; margin: 0; font-size:70%;"> Updated December 2024</p>
+<p id="timestamp" style="text-align: center; margin: 0; font-size: 70%;">Updated </p> 
+<script> document.getElementById('timestamp').innerHTML = 'Updated ' + new Date().toLocaleString('default', { month: 'long', year: 'numeric' }); </script>
 <p style="text-align: center; font-size:70%;"> © Noel Elias 2021</p>
 </main>
 </html>
