@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <!-- Bootstrap core CSS -->
+    <title>Noel Elias</title>
+    <link rel="shortcut icon" href="assets/imgs/logo.png"> 
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome-4.7.0.min.css" rel="stylesheet">
+    <link href="assets/css/academicons.min.css" rel="stylesheet">
+    <script src="assets/js/ionicons-5.2.3.js"></script>
+    <script>
+      function showSection(event, sectionId) {
+         event.preventDefault();
+
+         var sections = document.querySelectorAll('.section');
+               sections.forEach(function(section) {
+                   section.style.display = "none"; 
+         });
+          
+          var selectedSection = document.getElementById(sectionId);
+          selectedSection.style.display = "block"; 
+      }
+
+      function updateTimestamp() {
+        document.getElementById('timestamp').innerHTML =
+          'Updated ' + new Date().toLocaleString('default', { month: 'long', year: 'numeric' });
+      }
+      document.addEventListener("DOMContentLoaded", updateTimestamp);
+   </script>
+  </head>
+
+
+<body>
+<main role="main" class="container">
+
+  <div class="subtitle">
+    <h1 class="header1"> Noel Elias</h1>
+    <h2 class = "header3">ML @ Otter.ai</h2>
+  </div>
+  <br>
+  <div class=row>
+    <div class="columns left">
+      <div class="myPicture">
+      <img src="assets/imgs/me.JPG" alt="" />
+    </div>
+    </div>
+    
+    <div class= "columns right"> 
+  <div class="bodyText">
+  <h3 style="font-weight:normal;">About Me</h3>
+  <p>
+    I am currently a Machine Learning Engineer at <a href="https://otter.ai">Otter.ai</a>. 
+    I graduated from the University of Texas at Austin with a double major in Computer Science and Mathematics. 
+    During my time at UT, I was fortunate to be advised by 
+    <a href="http://sriram.utlinc.org/">Dr. Sriram Vishwanath</a> 
+    and 
+    <a href="https://www.cs.utexas.edu/~dwu4/">Dr. David Wu</a>. 
+  </p>
+
+  <p>
+    Previously, I was a Software Engineering Intern at <a href="https://www.apple.com/apple-vision-pro/">Apple</a> and 
+    a Machine Learning Intern at the 
+    <a href="https://www.arlut.utexas.edu/">Applied Research Laboratories</a>.
+  </p>
+
+  <p>
+    Feel free to reach out using the contact information below!
+  </p>
+</div>
+
+    <div class="social-icons" style="float: right; margin-right: 30px;"> 
+      <!-- <a href="" class="social-icon social-icon--resume">
+        <i class="fa fa-file"></i>
+        <div class="tooltip"> Resume  </div>
+      </a> -->
+      <a href="mailto:noelkelias@gmail.com" class="social-icon social-icon--email">
+        <i class="fa fa-envelope"></i>
+        <div class="tooltip">Email</div>
+      </a>
+      <a href="https://github.com/noelkelias" class="social-icon social-icon--github">
+        <i class="fa fa-github"></i>
+        <div class="tooltip">Github</div>
+      </a>
+      <a href="http://linkedin.com/in/noelkelias" class="social-icon social-icon--linkedin">
+        <i class="fa fa-linkedin"></i>
+        <div class="tooltip">LinkedIn</div>
+      </a>
+      <a href="https://scholar.google.com/citations?user=7XMZpMEAAAAJ&hl=en" class="social-icon social-icon--scholar">
+        <i class="ai ai-google-scholar"></i>
+                <div class="tooltip">Scholar</div>
+      </a>
+    </div>
+  </div>
+  </div>
+
+  <br>
+  <br>
+    <div>
+      <h1 class="header1b"> 
+         <a href="#" onclick="showSection(event, 'Publications')" style="color: black">Publications</a> <a>|</a>
+        <a href="#" onclick="showSection(event, 'Projects')"  style="color: black">Projects</a>   
+      </h1>  
+      <br>
+    </div>    
+
+    <section id="Projects" class="section">
+      <div class="grid">
+          <!-- Object Pose Estimation -->
+          <div class="mediumItem link-block"
+              style="background-color:#006C67; background-image:url('assets/imgs/cube.png'); background-size:auto 55%; background-position: right 10px bottom 3px;">
+            <a href="https://github.com/noelkelias/object-pose-estimation"></a>
+            <h5 class="gridHeader">Object Pose Estimation</h5>
+            <p class="gridText">A geometric perception stack for simulation-backed robotic RGB-D object pose</p>
+          </div>
+
+          <!-- Visual Robot Policy Learning -->
+          <div class="mediumItem link-block"
+              style="background-color:#1E212B; background-image:url('assets/imgs/robot.png'); background-size:auto 55%; background-position:center bottom 3px;">
+            <a href="https://github.com/noelkelias/visual-policy-learning"></a>
+            <h5 class="gridHeader">Visual Robot Policy Learning</h5>
+            <p class="gridText">An imitation learning pipeline for vision-based robot control</p>
+          </div>
+
+          <!-- Multi-Threaded Web Server -->
+          <div class="smallItem link-block"
+              style="background-color:#067BC2;">
+            <a href="https://github.com/noelkelias/web-server"></a>
+            <h5 class="gridHeader">Multi-Threaded Web Server</h5>
+            <p class="gridText">Exploring Multi-Threaded HTTP Web Servers in C and Rust</p>
+          </div>
+
+           <!-- Visualizing Calculus -->
+          <div class="smallItem link-block"
+              style="background-color:#B1B6A6;">
+            <a href="https://github.com/noelkelias/visualizing-calculus"></a>
+            <h5 class="gridHeader">Visualizing Calculus</h5>
+            <p class="gridText">Exploring multivariable calculus with Python</p>
+          </div>
+
+          <!-- COVID-19 Dashboard -->
+          <div class="mediumItem"
+              style="background-color:#D33E43; background-image:url('assets/imgs/graphs.png'); background-size:auto 60%; background-position:bottom center;">
+            <h5 class="gridHeader">COVID-19 Dashboard</h5>
+            <p class="gridText">A neural network based web-app prediction model</p>
+          </div>
+
+          <!-- Codex -->
+          <div class="largeItem link-block"
+              style="background-color:#067BC2; background-image:url('assets/imgs/ar.png'); background-size:auto 75%; background-position:bottom right;">
+            <h5 class="gridHeader">Codex</h5>
+            <p class="gridText">A revolutionary AR app to teach students coding</p>
+          </div>
+
+          <!-- Molecular Fecal Contamination Assay -->
+          <div class="largeItem link-block"
+              style="background-color:#B1B6A6; background-image:url('assets/imgs/water_tap.png'); background-size:auto 50%; background-position:bottom center;">
+            <h5 class="gridHeader">Molecular Fecal Contamination Assay</h5>
+            <p class="gridText">A LAMP-OSD assay paired with a cheaper material kit to detect the HF-183 fecal gene</p>
+          </div>
+
+          <!-- HIV Detection Kit for Infants -->
+          <div class="largeItem link-block"
+              style="background-color:#006C67; background-image:url('assets/imgs/igem.png'); background-size:auto 85%; background-position:bottom center;">
+            <h5 class="gridHeader">HIV Detection Kit for Infants</h5>
+            <p class="gridText">2018 iGEM Conference Project - Bronze</p>
+          </div>
+
+          <!-- Kaggle -->
+          <div class="mediumItem link-block"
+              style="background-color:#1E212B; background-image:url('https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png'); background-size:auto 40%; background-position:bottom center;">
+            <h5 class="gridHeader">Kaggle</h5>
+            <p class="gridText">Machine Learning competitor &amp; Data Science contributor</p>
+          </div>
+
+          <!-- LED Game -->
+          <div class="smallItem link-block"
+              style="background-color:#D33E43;">
+            <a href="https://github.com/noelkelias/arduino-game"></a>
+            <h5 class="gridHeader">Arduino</h5>
+            <p class="gridText">An engaging LED game made with Arduino</p>
+          </div>
+
+        </div>
+    </section>
+    
+    <section id="Publications" class="section">
+      <ol style="padding-left: 20px;">
+
+        <!-- 2026 Publications -->
+        <h3 style="font-size: 1.5em; color: #000000; font-weight: normal; margin-bottom: 10px; margin-left: -20px;">2026</h3>
+        <li>
+          <p>
+            <span style="font-size: 1.1em; font-weight: 450; color: #000000;">
+              MultiTok: Variable-Length Tokenization for Efficient LLMs Adapted from LZW Compression
+            </span><br>
+            <u>Noel Elias</u>, Homa Esfahanizadeh, Kaan Kale, Sriram Vishwanath, Muriel Medard<br>
+            <span style="color: #777777;">
+              IEEE International Symposium on Information Theory (ISIT) 2026
+            </span><br>
+            <a href="https://arxiv.org/pdf/2410.21548" style="color: #3498db;">[PDF]</a> | 
+            <a href="https://github.com/noelkelias/multitok" style="color: #3498db;">[Code]</a>
+          </p>
+        </li>
+
+         <!-- 2025 Publications -->
+        <h3 style="font-size: 1.5em; color: #000000; font-weight: normal; margin-top: 1.5em; margin-left: -20px;">2025</h3>
+        <li>
+          <p>
+            <span style="font-size: 1.1em; font-weight: 450; color: #000000;">
+              Pairing-Based Batch Arguments for NP with a Linear-Size CRS
+            </span><br>
+            Binyi Chen, <u>Noel Elias</u>, David Wu<br>
+            <span style="color: #777777;">
+              International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT) 2025
+            </span><br>
+            <a href="https://eprint.iacr.org/2025/1323.pdf" style="color: #3498db;">[PDF]</a> 
+          </p>
+        </li>
+    
+        <li>
+          <p>
+            <span style="font-size: 1.1em; font-weight: 450; color: #000000;">
+              Lova: A Novel Framework for Verifying Mathematical Proofs with Incrementally Verifiable Computation
+            </span><br>
+            <u>Noel Elias</u><br>
+            <span style="color: #777777;">Conference on Data and Application Security and Privacy (CODASPY) 2025</span><br>
+            <span style="color: #777777;">CIFRIS: Topics in Applied Cryptography 2024</span><br>
+            <a href="https://eprint.iacr.org/2024/1855.pdf" style="color: #3498db;">[PDF]</a> | 
+            <a href="https://github.com/noelkelias/lova" style="color: #3498db;">[Code]</a>
+          </p>
+        </li>
+    
+        <!-- 2024 Publications -->
+         <!--Need to convert style of parts of paper to CSS/class-->
+        <h3 style="font-size: 1.5em; color: #000000; font-weight: normal; margin-top: 1.5em; margin-left: -20px;">2024</h3>
+        <li>
+          <p>
+            <span style="font-size: 1.1em; font-weight: 450; color: #000000;">
+              TexShape: Information Theoretic Sentence Embedding for Language Models
+            </span><br>
+            Kaan Kale, Homa Esfahanizadeh, <u>Noel Elias</u>, Oguzhan Baser, Muriel Medard, Sriram Vishwanath<br>
+            <span style="color: #777777;">
+              IEEE International Symposium on Information Theory (ISIT) 2024
+            </span><br>
+            <a href="https://arxiv.org/pdf/2402.05132" style="color: #3498db;">[PDF]</a> | 
+            <a href="https://github.com/hesfahanizadeh/NeuralInformationShaping" style="color: #3498db;">[Code]</a>
+          </p>
+        </li>
+    
+        <!-- 2023 Publications -->
+        <h3 style="font-size: 1.5em; color: #000000; font-weight: normal; margin-top: 1.5em; margin-left: -20px;">2023</h3>
+        <li>
+          <p>
+            <span style="font-size: 1.1em; font-weight: 450; color: #000000;">
+              A Novel Score-CAM based Denoiser for Spectrographic Signature Extraction without Ground Truth
+            </span><br>
+            <u>Noel Elias</u><br>
+            <span style="color: #777777;">IEEE International Joint Conference on Neural Networks (IJCNN) 2023</span><br>
+            <a href="https://arxiv.org/pdf/2410.21557" style="color: #3498db;">[PDF]</a>
+          </p>
+        </li>
+    
+        <!-- 2022 Publications -->
+        <h3 style="font-size: 1.5em; color: #000000; font-weight: normal; margin-top: 1.5em; margin-left: -20px;">2022</h3>
+        <li>
+          <p>
+            <span style="font-size: 1.1em; font-weight: 450; color: #000000;">
+              Audio Classification of Low Feature Spectrograms Utilizing Convolutional Neural Networks
+            </span><br>
+            <u>Noel Elias</u><br>
+            <span style="color: #777777;">IEEE International Conference on Machine Learning and Applications (ICMLA) 2022</span><br>
+            <a href="https://arxiv.org/pdf/2410.21561" style="color: #3498db;">[PDF]</a>
+          </p>
+        </li>
+    
+        <!-- 2020 Publications -->
+        <h3 style="font-size: 1.5em; color: #000000; font-weight: normal; margin-top: 1.5em; margin-left: -20px;">2020</h3>
+        <li>
+          <p>
+            <span style="font-size: 1.1em; font-weight: 450; color: #000000;">
+              Robust Estimation of Bacterial Cell Count from Optical Density
+            </span><br>
+            Jacob Beal, Natalie G. Farny, Traci Haddock-Angelli, Vinoo Selvarajah, Geoff S. Baldwin, Russell Buckley-Taylor, Markus Gershater, Daisuke Kiga, John Marken, Vishal Sanchania, Abigail Sison, Christopher T. Workman & <u>iGEM Interlab Study Contributors</u><br>
+            <span style="color: #777777;">Nature Communications Journal 2020</span><br>
+            <a href="https://rdcu.be/ctWzd" style="color: #3498db;">[PDF]</a>
+          </p>
+        </li>
+    
+      </ol>
+    </section>      
+
+<br>
+<br>
+<p style="text-align: center; margin: 0; font-size:70%;"> Updated June 2026</p>
+<p style="text-align: center; font-size:70%;"> © Noel Elias 2021</p>
+</main>
+</html>

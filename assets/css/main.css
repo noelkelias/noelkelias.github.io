@@ -1,0 +1,279 @@
+.subtitle{
+  padding-top: 75px;
+  text-align: left;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.myPicture img{
+  object-fit: cover;
+  padding-top: 20px;
+  width: 90%;
+  max-height: 75%;
+  border-radius: 50%;
+}
+
+/* Text */
+.header1 {
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 450%;
+  border-bottom:5px solid #CCC;
+  padding-bottom:3px;
+}
+
+.header1b {
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  font-size: 300%;
+  border-bottom:1px solid #CCC;
+  padding-bottom:3px;
+}
+
+.header3 {
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+}
+
+.bodyText{
+  text-align: left;
+  padding-top: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.gridHeader{
+  margin: 5px;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+.gridText {
+  margin: 5px;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 250;
+  font-size: 75%;
+}
+
+
+/* Grid Layouts */
+.grid{
+  padding-top: 25px;
+  display: grid;
+  padding-bottom: 50px;
+  grid-template-columns: repeat(8 ,minmax(50px, auto));
+  grid-auto-rows:minmax(120px, auto);
+  grid-gap: 3px;
+}
+
+.largeItem {
+  grid-column-end: span 2;
+  grid-row-start: span 2;
+   overflow: hidden;
+   transition: all 0.3s ease-in-out;
+   color: white;
+   background-repeat: no-repeat;
+   border-width: 5px;
+
+}
+.largeItem:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.005, 1.005);
+  transform: scale(1.005, 1.005);
+  box-shadow:inset 0 0 0 99999px rgba(255,255,255,0.2);
+}
+
+.mediumItem {
+  grid-column-end: span 2;
+  grid-row-start: span 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+
+
+}
+.mediumItem:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.005, 1.005);
+  transform: scale(1.005, 1.005);
+  box-shadow:inset 0 0 0 99999px rgba(255,255,255,0.2);
+}
+
+.smallItem {
+  grid-column-end: span 1;
+  grid-row-start: span 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+
+}
+.smallItem:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.005, 1.005);
+  transform: scale(1.005, 1.005);
+  box-shadow:inset 0 0 0 99999px rgba(255,255,255,0.2);
+}
+
+
+
+/* Icons */
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+.social-icon:hover {
+  color: #fff;
+}
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.social-icon--linkedin {
+  background: #006599;
+  color: #fff;
+}
+.social-icon--linkedin .tooltip {
+  background: #006599;
+  color: currentColor;
+}
+.social-icon--linkedin .tooltip:after {
+  border-top-color: #006599;
+}
+
+/* .social-icon--email {
+  background: #311611;
+  color: #fff;
+}
+.social-icon--email .tooltip {
+  background: #311611;
+  color: currentColor;
+}
+.social-icon--email .tooltip:after {
+  border-top-color: #311611;
+} */
+
+.social-icon--email {
+  background: #D33E43;
+  color: #fff;
+}
+.social-icon--email .tooltip {
+  background: #D33E43;
+  color: currentColor;
+}
+.social-icon--email .tooltip:after {
+  border-top-color: #D33E43;
+}
+
+.social-icon--scholar {
+  background: #527fa6;
+  color: #fff;
+}
+.social-icon--scholar .tooltip {
+  background: #527fa6;
+  color: currentColor;
+}
+.social-icon--scholar .tooltip:after {
+  border-top-color: #527fa6;
+}
+/* .social-icon--resume {
+  background: #D33E43;
+  color: #fff;
+}
+.social-icon--resume .tooltip {
+  background: #D33E43;
+  color: currentColor;
+}
+.social-icon--resume .tooltip:after {
+  border-top-color: #D33E43;
+} */
+.social-icon--github {
+  background: #000;
+  color: #fff;
+}
+.social-icon--github .tooltip {
+  background: #000;
+  color: currentColor;
+}
+.social-icon--github .tooltip:after {
+  border-top-color: #000;
+}
+.social-icon i {
+  position: relative;
+  top: 1px;
+}
+
+
+.tooltip {
+  top: 165%;
+  left: 50%;
+  padding: 0.5rem 0.5rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Tabs */
+section {
+  display: none;
+}
+
+/* Remove link formatting from project grid blocks */
+.link-block {
+  position: relative;
+}
+.link-block > a {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
